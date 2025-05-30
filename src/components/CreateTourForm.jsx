@@ -62,7 +62,7 @@ const handleSubmit = async (e) => {
         : 0,
     };
 
-    const res = await axios.post("http://localhost:5000/api/trips", cleanedData, {
+    const res = await axios.post("https://ecotrip-server.onrender.com/api/trips", cleanedData, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,

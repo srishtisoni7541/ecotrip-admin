@@ -14,7 +14,7 @@ export default function LatestTours({refreshTrigger}) {
   useEffect(() => {
     const fetchTours = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/trips"); 
+        const res = await axios.get("https://ecotrip-server.onrender.com/api/trips"); 
         console.log(res.data.data);
         setTours(res.data.data || []); 
       } catch (err) {

@@ -19,7 +19,7 @@ const AdminLoginPage = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", form);
+      const res = await axios.post("https://ecotrip-server.onrender.com/api/auth/login", form);
 
       if (res.data.success) {
         const user = res.data.data;
