@@ -7,7 +7,7 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full mt-[-25%] shadow-sm px-6 py-4 sticky top-0 z-50">
+    <nav className="bg-white w-full shadow-sm px-6 py-4 sticky top-0 z-50">
       <div className="w-full mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-1">
           <span className="text-2xl font-bold text-gray-800">ecotrip</span>

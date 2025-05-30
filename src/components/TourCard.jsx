@@ -16,7 +16,7 @@ export default function TourCard({ images, description, startDate, name }) {
       <p className="text-xs text-gray-500 mt-1">
         Start Date: {new Date(startDate).toLocaleDateString()}
       </p>
-      <button className="p-2 rounded-md bg-blue-600 text-white mt-6">Edit Tour</button>
+      <button className="p-2 rounded-md bg-green-600 text-white mt-6">Edit Tour</button>
     </div>
     </div>
   );

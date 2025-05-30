@@ -31,7 +31,7 @@ export default function LatestTours() {
     <div>
       <div className="flex justify-between mb-3 w-full">
         <h2 className="font-bold text-lg">Latest tours</h2>
-        <button className="text-xs bg-blue-500 text-white px-2 py-1 rounded">
+        <button className="text-xs bg-green-500 text-white px-2 py-1 rounded">
           All Tours
         </button>
       </div>
