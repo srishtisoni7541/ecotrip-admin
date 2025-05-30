@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
-export default function CreateTourForm() {
+export default function CreateTourForm({onCreated}) {
   const [formData, setFormData] = useState({
     name: "",
     tagline: "",
@@ -67,9 +68,11 @@ const handleSubmit = async (e) => {
         Authorization: `Bearer ${token}`,
       },
     });
-
-    alert("Tour Created Successfully!");
+    toast.success("Tour Created Successfully!");
     console.log("Tour Created:", res.data);
+     if (onCreated) {
+      onCreated();
+    }
 
     // Reset form
     setFormData({

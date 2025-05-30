@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TourCard from "./TourCard";
 
-export default function LatestTours() {
+export default function LatestTours({refreshTrigger}) {
   const [tours, setTours] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -25,10 +25,10 @@ export default function LatestTours() {
     };
 
     fetchTours();
-  }, []);
+  }, [refreshTrigger]);
 
   return (
-    <div>
+    <div className="h-screen overflow-y-auto">
       <div className="flex justify-between mb-3 w-full">
         <h2 className="font-bold text-lg">Latest tours</h2>
         <button className="text-xs bg-green-500 text-white px-2 py-1 rounded">
