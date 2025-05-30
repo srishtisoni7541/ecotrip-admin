@@ -44,7 +44,7 @@ const RegisterAdminPage = () => {
   };
 
   return (
-    <div className="min-h-screen w-full  gap-40 flex flex-col items-center justify-center bg-gray-100 px-4">
+    <div className="min-h-screen w-full  gap-40 flex flex-col items-center  bg-gray-100 px-4">
         <Nav/>
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold text-center mb-6 text-green-700">

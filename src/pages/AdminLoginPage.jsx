@@ -42,7 +42,7 @@ const AdminLoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen w-full  flex flex-col gap-50 items-center justify-center bg-gray-100 px-4">
+    <div className="min-h-screen w-full flex flex-col gap-40 items-center  bg-gray-100 px-4">
         <Nav/>
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold text-center text-green-700 mb-6">
